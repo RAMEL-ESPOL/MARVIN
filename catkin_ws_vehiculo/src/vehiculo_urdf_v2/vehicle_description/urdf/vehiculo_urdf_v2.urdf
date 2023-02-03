@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by
+Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version:
+1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="vehiculo_urdf_v2">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.0012936 -0.0013074 0.052855"
+        rpy="0 0 0" />
+      <mass
+        value="0.65815" />
+      <inertia
+        ixx="0.0006861"
+        ixy="-2.0593E-06"
+        ixz="5.8448E-06"
+        iyy="0.0016384"
+        iyz="1.37E-08"
+        izz="0.0021405" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vehicle_description/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vehicle_description/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <link
+    name="link_lidar">
+    <inertial>
+      <origin
+        xyz="-1.3261E-05 0 -0.01853"
+        rpy="0 0 0" />
+      <mass
+        value="0.064116" />
+      <inertia
+        ixx="1.3258E-05"
+        ixy="4.4109E-22"
+        ixz="-1.2789E-08"
+        iyy="1.3212E-05"
+        iyz="-2.5949E-22"
+        izz="1.3761E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vehicle_description/meshes/link_lidar.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.019608 0.019608 0.019608 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vehicle_description/meshes/link_lidar.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <link
+    name="link_realsense">
+    <inertial>
+      <origin
+        xyz="-0.01273 -2.7327E-07 -4.8132E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.048199" />
+      <inertia
+        ixx="2.7389E-05"
+        ixy="-4.2604E-07"
+        ixz="7.5461E-09"
+        iyy="3.3505E-06"
+        iyz="2.2352E-09"
+        izz="2.665E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vehicle_description/meshes/link_realsense.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.92157 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vehicle_description/meshes/link_realsense.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="camera_depth_link"></link>
+
+  <link
+    name="link_camera_left">
+    <inertial>
+      <origin
+        xyz="6.5635E-05 -0.0048087 0.0021608"
+        rpy="0 0 0" />
+      <mass
+        value="0.0067428" />
+      <inertia
+        ixx="2.7218E-07"
+        ixy="-2.4896E-10"
+        ixz="-3.357E-09"
+        iyy="4.9747E-07"
+        iyz="8.1629E-09"
+        izz="2.5635E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 -1.57" />
+      <geometry>
+        <mesh
+          filename="package://vehicle_description/meshes/link_camera_left.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vehicle_description/meshes/link_camera_left.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <link
+    name="link_camera_right">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.0067428" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 1.57" />
+      <geometry>
+        <mesh
+          filename="package://vehicle_description/meshes/link_camera_right.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vehicle_description/meshes/link_camera_right.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- Define Joints -->
+  <joint
+    name="joint_lidar"
+    type="fixed">
+    <origin
+      xyz="0.0011194 -0.0018421 0.17525"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_lidar" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+
+  <joint name="camera_depth_joint"
+    type="fixed">
+    <origin xyz="0 0 0" rpy="-1.57 0 -1.57" />
+    <parent link="link_realsense" />
+    <child link="camera_depth_link" />
+  </joint>
+
+  <joint
+    name="joint_realsense"
+    type="fixed">
+    <origin
+      xyz="0.091198 -0.0025328 0.13167"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_realsense" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+
+  <joint
+    name="joint_camera_left"
+    type="fixed">
+    <origin
+      xyz="0.001298 0.064363 0.072198"
+      rpy="0 0 1.57" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_camera_left" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+
+  <joint
+    name="joint_camera_right"
+    type="fixed">
+    <origin
+      xyz="0.001298 -0.068037 0.072198"
+      rpy="0 0 -1.57" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_camera_right" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>
