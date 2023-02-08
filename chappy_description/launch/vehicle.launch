@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+
+
+
+<launch>
+  <arg name="namespace" default="vehiculo_urdf_v2"/>
+  <arg name="lidar_on" default="false"/>
+
+  <group ns="$(arg namespace)">
+    <!-- robot_description is used by nodes that publish to joint_states. -->
+    <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find vehicle_description)/urdf/vehiculo.urdf.xacro' lidar_on:=$(arg lidar_on)" />
+
+    <!-- Read joint positions from joint_states, then publish the vehicle's state to tf. -->
+    <node name="vehicle_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher">
+      <param name="publish_frequency" value="30.0"/>
+    </node>
+
+  </group>
+</launch>
