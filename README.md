@@ -4,7 +4,7 @@
 <div align="center">
  <img src="https://github.com/RAMEL-ESPOL/Diseno_Mecatronico/blob/main/imagenes/Vehiculo.png?raw=true" alt="Chappy" height="180" width="200"> 
 </div>
-<h3 align="center">DelyBot</h3>
+<h3 align="center">Chappy</h3>
 <p align="center">Ready to serve you anytime, anywhere.</p>
 <br>
 
@@ -12,19 +12,21 @@
 ## About The Project
 
 <br>
-DelyBot is a robot that uses six wheels to drive itself along pedestrian paths but also on public roads to reach requested delivery addresses.
-The robot is able to locate itself through knowledge of the global static map and is able to detect and avoid moving obstacles.
-<br>
-<br>
-<div align="center">
-<img src="https://github.com/gmeidk/DelyBot/blob/cb787818e426946b98b9b5e84221a44c5c941cd8/MEDIA/simulation.png?raw=true" alt="DelyBot simulation"> 
-</div>
-<br>
-DelyBot is composed of:
+Chappy is a robot that uses four wheels and an Ackermann steering model to drive itself along pedestrian paths but also on public roads to reach requested delivery addresses.
+The user is able to move the robot with a Dualshock 4 controller in the following direcctions: 
 <br><br>
  <ul>
-  <li>an <i>upper structure</i> designed to transport packages, objects, food</li>
-  <li><i>six motorized wheels</i> that allow it to move using differential control</li>
+  <li>Forward</li>
+ <li>Backwards</li>
+ <li>Turn left or right</li>
+</ul> 
+<br>
+<br>
+Chappy is composed of:
+<br><br>
+ <ul>
+  <li>an <i>Complex structure</i> designed to for different vision sensors: Lidar, depth camera and side cameras</li>
+  <li><i>Four motorized wheels</i> that allow it to move using Ackermann control</li>
 </ul> 
 <br>
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -46,27 +48,6 @@ DelyBot is composed of:
 
 At first it is necessary to install external packages:
 
-* navigation
-  ```sh
-  sudo apt install ros-noetic-navigation
-  ```
-
-* slam-gmapping
-  ```sh
-  sudo apt install ros-noetic-slam-gmapping
-  ```
-
-* map-server
-  ```sh
-  sudo apt install ros-noetic-map-server
-  ```
-  
-* robot_localization
-  ```sh
-  sudo apt-get install ros-noetic-robot-localization
-  ```
-
-<br>
 
 ### Installation
 
@@ -189,20 +170,3 @@ The list is imported from the **waypoint.json** file inside the *delybot_navigat
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-## Gazebo Simulation
-https://user-images.githubusercontent.com/81641638/145631074-0517d654-1828-495e-8481-1b4d265e365c.mp4
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-<!-- CONTACT -->
-## Contact
-
-For further information check the report - [DelyBot Report.pdf](https://bit.ly/3GNdJTN)
-
-Alessandro Quatela - [@qualex97](https://bit.ly/3dP01Dp) - a.quatela1@studenti.poliba.it 
-
-Giuseppe Roberto - [@gmeidk](https://bit.ly/30rueVT) - g.roberto1@studenti.poliba.it
-
-Project Link: [https://github.com/gmeidk/DelyBot](https://bit.ly/3IO2zji)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
