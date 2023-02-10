@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<robot name="track1">
+  <link name="base_link">
+   <visual>
+     <origin xyz="0 0 0" rpy="0 0 0" />
+       <geometry>
+        <mesh filename="package://aupol_gazebo/models/track1/meshes/track1.dae"/>
+      </geometry>
+   </visual>
+   <collision>
+     <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
+     <geometry>
+      <mesh filename="package://aupol_gazebo/models/track1/meshes/track1.dae"/>
+    </geometry>
+    </collision>
+  </link>
+</robot>
