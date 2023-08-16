@@ -55,10 +55,10 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-        #base_footprint:
-        #  Alpha: 1
-        #  Show Axes: false
-        #  Show Trail: false
+        base_footprint:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
         base_link:
           Alpha: 1
           Show Axes: false
@@ -134,8 +134,8 @@ Visualization Manager:
           Value: true
         back_wheel_right:
           Value: true
-        #base_footprint:
-        #  Value: true
+        base_footprint:
+          Value: true
         base_link:
           Value: true
         camera_depth:
@@ -170,33 +170,33 @@ Visualization Manager:
       Show Axes: true
       Show Names: true
       Tree:
-        #base_footprint:
-        base_link: 
-          camera_depth:
-            camera_depth_optical:
-               {}
-          camera_left:
-            camera_optical_left:
-               {}
-          camera_right:
-            camera_optical_right:
+        odom:
+          base_link:
+            base_footprint:
               {}
-          front_handle_left:
-            {}
-          front_handle_right:
-            {}
-          imu_link:
-            {}
-          lidar:
-            {}
-          back_wheel_left:
-            {}
-          back_wheel_right:
-            {}
-          front_wheel_left:
-            {}
-          front_wheel_right:
-            {}
+            back_wheel_left:
+              {}
+            back_wheel_right:
+              {}
+            camera_depth:
+              camera_depth_optical:
+               {}
+            camera_left:
+              camera_optical_left:
+               {}
+            camera_right:
+              camera_optical_right:
+                {}
+            front_handle_left:
+              front_wheel_left:
+                {}
+            front_handle_right:
+              front_wheel_right:
+                {}
+            imu_link:
+              {}
+            lidar:
+              {}
       Update Interval: 0
       Value: true
     - Class: rviz_default_plugins/Axes

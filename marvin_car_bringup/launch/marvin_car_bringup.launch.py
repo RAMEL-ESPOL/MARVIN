@@ -12,7 +12,7 @@ from ament_index_python.packages import get_package_share_directory
 from launch.actions import IncludeLaunchDescription
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 
-print("---------------------robot_type = M.A.R.V.I.N---------------------")
+print("----------------------robot_type = M.A.R.V.I.N---------------------")
 
 
 def generate_launch_description():
@@ -20,8 +20,12 @@ def generate_launch_description():
     default_model_path = urdf_tutorial_path / 'urdf/marvin.urdf.xacro'
     default_rviz_config_path = urdf_tutorial_path / 'rviz/description.rviz'
 
-    gui_arg = DeclareLaunchArgument(name='gui', default_value='false', choices=['true', 'false'],
-                                    description='Flag to enable joint_state_publisher_gui')
+    gui_arg = DeclareLaunchArgument(
+        name='gui',
+        default_value='false',
+        description='Flag to enable joint_state_publisher_gui'
+    )
+
     model_arg = DeclareLaunchArgument(name='model', default_value=str(default_model_path),
                                       description='Absolute path to robot urdf file')
     rviz_arg = DeclareLaunchArgument(name='rvizconfig', default_value=str(default_rviz_config_path),
@@ -90,7 +94,7 @@ def generate_launch_description():
     )
 
     ekf_node = Node(
-        package='robot_localization',
+        package='marvin_sim_base',
         executable='ekf_node',
         name='ekf_filter_node',
         output='screen',
@@ -100,12 +104,12 @@ def generate_launch_description():
 
     marvin_joy_node = Node(
         package='marvin_car_ctrl',
-        executable='marvin_car_joy_R2',
+        executable='marvin_car_joy',
     )
 
-    lidar_node= IncludeLaunchDescription(
-            PythonLaunchDescriptionSource(lidar_launch_path),
-        ),
+    lidar_node = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(lidar_launch_path),
+    ),
 
     return LaunchDescription([
         gui_arg,
@@ -116,10 +120,10 @@ def generate_launch_description():
         joint_state_publisher_gui_node,
         robot_state_publisher_node,
         rviz_node,
-        lidar_node,
         driver_node,
         base_node,
         imu_filter_node,
         ekf_node,
-        marvin_joy_node
+        marvin_joy_node,
+        lidar_node
     ])
