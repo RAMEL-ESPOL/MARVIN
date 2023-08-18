@@ -18,35 +18,19 @@ print("----------------------robot_type = M.A.R.V.I.N---------------------")
 def generate_launch_description():
     urdf_tutorial_path = get_package_share_path('marvin_description')
     default_model_path = urdf_tutorial_path / 'urdf/marvin.urdf.xacro'
-    default_rviz_config_path = urdf_tutorial_path / 'rviz/description.rviz'
+    default_rviz_config_path = urdf_tutorial_path / 'rviz/description_car.rviz'
 
-    gui_arg = DeclareLaunchArgument(
-        name='gui',
-        default_value='false',
-        description='Flag to enable joint_state_publisher_gui'
-    )
-
-    model_arg =   IncludeLaunchDescription(
-            PythonLaunchDescriptionSource(default_model_path),
-            launch_arguments={'rviz': 'true',
-                              }.items()
-        ),
-
+    gui_arg = DeclareLaunchArgument(name='gui', default_value='false', choices=['true', 'false'],
+                                    description='Flag to enable joint_state_publisher_gui')
+    model_arg = DeclareLaunchArgument(name='model', default_value=str(default_model_path),
+                                      description='Absolute path to robot urdf file')
     rviz_arg = DeclareLaunchArgument(name='rvizconfig', default_value=str(default_rviz_config_path),
                                      description='Absolute path to rviz config file')
     pub_odom_tf_arg = DeclareLaunchArgument('pub_odom_tf', default_value='false',
                                             description='Whether to publish the tf from the original odom to the base_footprint')
+
     robot_description = ParameterValue(Command(['xacro ', LaunchConfiguration('model')]),
                                        value_type=str)
-    ekf_config_path = PathJoinSubstitution(
-        [FindPackageShare("marvin_base"), "config", "ekf.yaml"]
-    )
-
-    lidar_launch_path = PathJoinSubstitution(
-        [FindPackageShare('marvin_car_lidar'), 'launch',
-         'ld19.launch.py']
-    )
-    
 
     robot_state_publisher_node = Node(
         package='robot_state_publisher',
@@ -98,23 +82,16 @@ def generate_launch_description():
         parameters=[imu_filter_config]
     )
 
-    ekf_node = Node(
-        package='marvin_sim_base',
-        executable='ekf_node',
-        name='ekf_filter_node',
-        output='screen',
-        parameters=[ekf_config_path],
-        remappings=[("odometry/unfiltered", "odom")]
-    )
-
     marvin_joy_node = Node(
         package='marvin_car_ctrl',
         executable='marvin_car_joy',
     )
 
     lidar_node = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(lidar_launch_path),
-    ),
+        PythonLaunchDescriptionSource([os.path.join(
+            get_package_share_directory('marvin_car_lidar'), 'launch'),
+            '/ld19_lidar.launch.py'])
+    )
 
     return LaunchDescription([
         gui_arg,
@@ -128,7 +105,6 @@ def generate_launch_description():
         driver_node,
         base_node,
         imu_filter_node,
-        ekf_node,
         marvin_joy_node,
         lidar_node
     ])

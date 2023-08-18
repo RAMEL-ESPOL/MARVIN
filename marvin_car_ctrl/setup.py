@@ -23,7 +23,7 @@ setup(
     entry_points={
         'console_scripts': [
         'marvin_car_keyboard	= marvin_car_ctrl.marvin_car_keyboard:main',
-        'marvin_car_joy_R2	= marvin_car_ctrl.marvin_car_joy:main',
+        'marvin_car_joy	= marvin_car_ctrl.marvin_car_joy:main',
         ],
     },
 )

@@ -50,7 +50,7 @@ class OdomPublisher:public rclcpp ::Node
 	  {            
             this->declare_parameter<double>("wheelbase",0.25);
             this->declare_parameter<std::string>("odom_frame","odom");
-            this->declare_parameter<std::string>("base_footprint_frame","base_footprint"); 
+            this->declare_parameter<std::string>("base_link_frame","base_link"); 
             this->declare_parameter<double>("linear_scale_x",1.0);
             this->declare_parameter<double>("linear_scale_y",1.0);
             this->declare_parameter<bool>("pub_odom_tf",true);
@@ -99,7 +99,7 @@ class OdomPublisher:public rclcpp ::Node
 			nav_msgs::msg::Odometry odom;
 			odom.header.stamp = curren_time;
 			odom.header.frame_id = "odom";
-			odom.child_frame_id = "base_footprint";
+			odom.child_frame_id = "base_link";
 			// robot's position in x,y and z
 			odom.pose.pose.position.x = x_pos_;
 			odom.pose.pose.position.y = y_pos_;
@@ -131,7 +131,7 @@ class OdomPublisher:public rclcpp ::Node
                 rclcpp::Time now = this->get_clock()->now();
                 t.header.stamp = now;
                 t.header.frame_id = "odom";
-                t.child_frame_id = "base_footprint";
+                t.child_frame_id = "base_link";
                 t.transform.translation.x = x_pos_;
                 t.transform.translation.y = y_pos_;
                 t.transform.translation.z = 0.0;
