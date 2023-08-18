@@ -1,5 +1,4 @@
 # Mobile Autonomous Robot Vehicle for Investigation and Navigation
-[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
 
 ## Introduction
 MARVIN is a comprehensive platform (built by Luis Andrade Proaño) designed to facilitate the development and deployment of autnomous vehicles with Ackermann steering , providing a set of essential modules and tools to enable various capabilities. The framework consists of the following core components:
