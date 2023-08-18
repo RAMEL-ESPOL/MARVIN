@@ -21,7 +21,7 @@ def generate_launch_description():
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource(toolbox_launch_path),
             launch_arguments={'use_sim_time': LaunchConfiguration('use_sim_time'),
-                              'params_file': 'src/marvin_navigation/config/localization_car.yaml'
+                              'params_file': 'src/marvin_navigation/config/localization.yaml'
                               }.items()
         )
     ])
