@@ -14,15 +14,12 @@ find_package(rclpy REQUIRED)
 # find_package(<dependency> REQUIRED)
 
 install(
-  DIRECTORY launch rviz worlds config
+  DIRECTORY launch worlds config rviz
   DESTINATION share/${PROJECT_NAME}
 )
 ament_python_install_package(${PROJECT_NAME})
 
-install(PROGRAMS
-  scripts/command_timeout.py
-  DESTINATION lib/${PROJECT_NAME}
-)
+
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

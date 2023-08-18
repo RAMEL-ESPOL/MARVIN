@@ -3,23 +3,16 @@
 <package format="3">
   <name>marvin_navigation</name>
   <version>0.0.0</version>
-  <description>marvin Navigation Package</description>
-  <maintainer email="laandrad@espol.edu.ec">lap</maintainer>
-  <license>Apache 2.0</license>
+  <description>TODO: Package description</description>
+  <maintainer email="laandrad@espol.edu.ec">marvin</maintainer>
+  <license>TODO: License declaration</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
-  <exec_depend>nav2_bringup</exec_depend>
-  <exec_depend>nav2_amcl</exec_depend>
-  <exec_depend>nav2_bt_navigator</exec_depend>
-  <exec_depend>nav2_costmap_2d</exec_depend>
-  <exec_depend>nav2_core</exec_depend>
-  <exec_depend>nav2_dwb_controller</exec_depend>
+
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
 
   <export>
     <build_type>ament_cmake</build_type>
-    <exec_depend>nav2_bringup</exec_depend>
-    <exec_depend>slam_toolbox</exec_depend>
   </export>
 </package>

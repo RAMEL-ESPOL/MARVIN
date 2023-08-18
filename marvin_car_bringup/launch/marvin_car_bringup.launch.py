@@ -26,8 +26,12 @@ def generate_launch_description():
         description='Flag to enable joint_state_publisher_gui'
     )
 
-    model_arg = DeclareLaunchArgument(name='model', default_value=str(default_model_path),
-                                      description='Absolute path to robot urdf file')
+    model_arg =   IncludeLaunchDescription(
+            PythonLaunchDescriptionSource(default_model_path),
+            launch_arguments={'rviz': 'true',
+                              }.items()
+        ),
+
     rviz_arg = DeclareLaunchArgument(name='rvizconfig', default_value=str(default_rviz_config_path),
                                      description='Absolute path to rviz config file')
     pub_odom_tf_arg = DeclareLaunchArgument('pub_odom_tf', default_value='false',
@@ -42,6 +46,7 @@ def generate_launch_description():
         [FindPackageShare('marvin_car_lidar'), 'launch',
          'ld19.launch.py']
     )
+    
 
     robot_state_publisher_node = Node(
         package='robot_state_publisher',
