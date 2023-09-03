@@ -1,0 +1,1 @@
+/home/marvin/marvin/marvin_sim_ws/build/marvin_sim_bringup/ament_cmake_environment_hooks/local_setup.sh

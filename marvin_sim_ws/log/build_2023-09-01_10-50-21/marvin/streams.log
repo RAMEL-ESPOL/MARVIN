@@ -1,0 +1,32 @@
+[0.140s] Invoking command in '/home/marvin/marvin/marvin_sim_ws/build/marvin': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/marvin/marvin/marvin_sim_ws/src/marvin -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/marvin/marvin/marvin_sim_ws/install/marvin
+[0.205s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.225s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.577s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.599s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.730s] -- Added test 'lint_cmake' to check CMake code style
+[0.731s] -- Added test 'xmllint' to check XML markup files
+[0.743s] -- Configuring done
+[0.743s] -- Generating done
+[0.743s] -- Build files have been written to: /home/marvin/marvin/marvin_sim_ws/build/marvin
+[0.751s] Invoked command in '/home/marvin/marvin/marvin_sim_ws/build/marvin' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/marvin/marvin/marvin_sim_ws/src/marvin -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/marvin/marvin/marvin_sim_ws/install/marvin
+[0.753s] Invoking command in '/home/marvin/marvin/marvin_sim_ws/build/marvin': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/marvin/marvin/marvin_sim_ws/build/marvin -- -j6 -l6
+[0.861s] Invoked command in '/home/marvin/marvin/marvin_sim_ws/build/marvin' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/marvin/marvin/marvin_sim_ws/build/marvin -- -j6 -l6
+[0.945s] Invoking command in '/home/marvin/marvin/marvin_sim_ws/build/marvin': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/marvin/marvin/marvin_sim_ws/build/marvin
+[0.974s] -- Install configuration: ""
+[0.974s] -- Execute custom install script
+[0.976s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin/share/ament_index/resource_index/package_run_dependencies/marvin
+[0.976s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin/share/ament_index/resource_index/parent_prefix_path/marvin
+[0.976s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin/share/marvin/environment/ament_prefix_path.sh
+[0.977s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin/share/marvin/environment/ament_prefix_path.dsv
+[0.977s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin/share/marvin/environment/path.sh
+[0.978s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin/share/marvin/environment/path.dsv
+[0.978s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin/share/marvin/local_setup.bash
+[0.978s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin/share/marvin/local_setup.sh
+[0.978s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin/share/marvin/local_setup.zsh
+[0.978s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin/share/marvin/local_setup.dsv
+[0.979s] -- Symlinking: /home/marvin/marvin/marvin_sim_ws/install/marvin/share/marvin/package.dsv
+[0.995s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin/share/ament_index/resource_index/packages/marvin
+[0.996s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin/share/marvin/cmake/marvinConfig.cmake
+[0.997s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin/share/marvin/cmake/marvinConfig-version.cmake
+[0.998s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin/share/marvin/package.xml
+[1.007s] Invoked command in '/home/marvin/marvin/marvin_sim_ws/build/marvin' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/marvin/marvin/marvin_sim_ws/build/marvin

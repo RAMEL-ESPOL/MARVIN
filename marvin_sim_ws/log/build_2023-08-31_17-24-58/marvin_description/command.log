@@ -1,0 +1,4 @@
+Invoking command in '/home/marvin/marvin/marvin_sim_ws/build/marvin_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/marvin/marvin/marvin_sim_ws/build/marvin_description -- -j6 -l6
+Invoked command in '/home/marvin/marvin/marvin_sim_ws/build/marvin_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/marvin/marvin/marvin_sim_ws/build/marvin_description -- -j6 -l6
+Invoking command in '/home/marvin/marvin/marvin_sim_ws/build/marvin_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/marvin/marvin/marvin_sim_ws/build/marvin_description
+Invoked command in '/home/marvin/marvin/marvin_sim_ws/build/marvin_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/marvin/marvin/marvin_sim_ws/build/marvin_description

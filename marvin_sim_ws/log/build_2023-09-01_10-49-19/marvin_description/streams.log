@@ -1,0 +1,55 @@
+[0.141s] Invoking command in '/home/marvin/marvin/marvin_sim_ws/build/marvin_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/marvin/marvin/marvin_sim_ws/src/marvin_description -DCMAKE_INSTALL_PREFIX=/home/marvin/marvin/marvin_sim_ws/install/marvin_description
+[0.209s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.280s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.630s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.693s] -- Found urdf: 2.4.0 (/opt/ros/foxy/share/urdf/cmake)
+[0.754s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.944s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.945s] -- Added test 'lint_cmake' to check CMake code style
+[0.946s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[0.950s] -- Added test 'xmllint' to check XML markup files
+[1.012s] -- Configuring done
+[1.117s] -- Generating done
+[1.120s] -- Build files have been written to: /home/marvin/marvin/marvin_sim_ws/build/marvin_description
+[1.146s] Invoked command in '/home/marvin/marvin/marvin_sim_ws/build/marvin_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/marvin/marvin/marvin_sim_ws/src/marvin_description -DCMAKE_INSTALL_PREFIX=/home/marvin/marvin/marvin_sim_ws/install/marvin_description
+[1.154s] Invoking command in '/home/marvin/marvin/marvin_sim_ws/build/marvin_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/marvin/marvin/marvin_sim_ws/build/marvin_description -- -j6 -l6
+[1.338s] Invoked command in '/home/marvin/marvin/marvin_sim_ws/build/marvin_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/marvin/marvin/marvin_sim_ws/build/marvin_description -- -j6 -l6
+[1.425s] Invoking command in '/home/marvin/marvin/marvin_sim_ws/build/marvin_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/marvin/marvin/marvin_sim_ws/build/marvin_description
+[1.450s] -- Install configuration: ""
+[1.451s] -- Execute custom install script
+[1.451s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_description/share/marvin_description/launch/description.launch.py
+[1.451s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_description/share/marvin_description/urdf/controller/ackermann_drive.xacro
+[1.451s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_description/share/marvin_description/urdf/marvin.urdf.xacro
+[1.451s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_description/share/marvin_description/urdf/sensors/camera_depth.xacro
+[1.451s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_description/share/marvin_description/urdf/sensors/camera_left.xacro
+[1.452s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_description/share/marvin_description/urdf/sensors/camera_right.xacro
+[1.452s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_description/share/marvin_description/urdf/sensors/imu.xacro
+[1.452s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_description/share/marvin_description/urdf/sensors/lidar.xacro
+[1.452s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_description/share/marvin_description/rviz/description.rviz
+[1.454s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_description/share/marvin_description/meshes/back_wheel_left.STL
+[1.455s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_description/share/marvin_description/meshes/back_wheel_right.STL
+[1.455s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_description/share/marvin_description/meshes/base_link.STL
+[1.456s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_description/share/marvin_description/meshes/camera_left.STL
+[1.457s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_description/share/marvin_description/meshes/camera_right.STL
+[1.457s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_description/share/marvin_description/meshes/depth_camera.STL
+[1.458s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_description/share/marvin_description/meshes/front_handle_left.STL
+[1.459s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_description/share/marvin_description/meshes/front_handle_right.STL
+[1.459s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_description/share/marvin_description/meshes/front_wheel_left.STL
+[1.460s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_description/share/marvin_description/meshes/front_wheel_right.STL
+[1.462s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_description/share/marvin_description/meshes/lidar.STL
+[1.463s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_description/share/ament_index/resource_index/package_run_dependencies/marvin_description
+[1.464s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_description/share/ament_index/resource_index/parent_prefix_path/marvin_description
+[1.464s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_description/share/marvin_description/environment/ament_prefix_path.sh
+[1.465s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_description/share/marvin_description/environment/ament_prefix_path.dsv
+[1.465s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_description/share/marvin_description/environment/path.sh
+[1.467s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_description/share/marvin_description/environment/path.dsv
+[1.467s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_description/share/marvin_description/local_setup.bash
+[1.467s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_description/share/marvin_description/local_setup.sh
+[1.468s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_description/share/marvin_description/local_setup.zsh
+[1.468s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_description/share/marvin_description/local_setup.dsv
+[1.468s] -- Symlinking: /home/marvin/marvin/marvin_sim_ws/install/marvin_description/share/marvin_description/package.dsv
+[1.486s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_description/share/ament_index/resource_index/packages/marvin_description
+[1.488s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_description/share/marvin_description/cmake/marvin_descriptionConfig.cmake
+[1.488s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_description/share/marvin_description/cmake/marvin_descriptionConfig-version.cmake
+[1.488s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_description/share/marvin_description/package.xml
+[1.875s] Invoked command in '/home/marvin/marvin/marvin_sim_ws/build/marvin_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/marvin/marvin/marvin_sim_ws/build/marvin_description

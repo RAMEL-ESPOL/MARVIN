@@ -1,0 +1,30 @@
+[0.067s] Invoking command in '/home/marvin/marvin/marvin_sim_ws/build/marvin_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/marvin/marvin/marvin_ws/install/marvincar_nav:/home/marvin/marvin/marvin_ws/install/marvincar_laser:/home/marvin/marvin/marvin_ws/install/marvincar_description:/home/marvin/marvin/marvin_ws/install/marvincar_ctrl:/home/marvin/marvin/marvin_ws/install/marvincar_bringup:/opt/ros/foxy /usr/bin/cmake --build /home/marvin/marvin/marvin_sim_ws/build/marvin_navigation -- -j6 -l6
+[0.130s] Invoked command in '/home/marvin/marvin/marvin_sim_ws/build/marvin_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/marvin/marvin/marvin_ws/install/marvincar_nav:/home/marvin/marvin/marvin_ws/install/marvincar_laser:/home/marvin/marvin/marvin_ws/install/marvincar_description:/home/marvin/marvin/marvin_ws/install/marvincar_ctrl:/home/marvin/marvin/marvin_ws/install/marvincar_bringup:/opt/ros/foxy /usr/bin/cmake --build /home/marvin/marvin/marvin_sim_ws/build/marvin_navigation -- -j6 -l6
+[0.177s] Invoking command in '/home/marvin/marvin/marvin_sim_ws/build/marvin_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/marvin/marvin/marvin_ws/install/marvincar_nav:/home/marvin/marvin/marvin_ws/install/marvincar_laser:/home/marvin/marvin/marvin_ws/install/marvincar_description:/home/marvin/marvin/marvin_ws/install/marvincar_ctrl:/home/marvin/marvin/marvin_ws/install/marvincar_bringup:/opt/ros/foxy /usr/bin/cmake --install /home/marvin/marvin/marvin_sim_ws/build/marvin_navigation
+[0.204s] -- Install configuration: ""
+[0.204s] -- Execute custom install script
+[0.208s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_navigation/share/marvin_navigation/launch/localization.launch.py
+[0.208s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_navigation/share/marvin_navigation/launch/navigation.launch.py
+[0.209s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_navigation/share/marvin_navigation/launch/slam.launch.py
+[0.214s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_navigation/share/marvin_navigation/config/localization.yaml
+[0.214s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_navigation/share/marvin_navigation/config/slam.yaml
+[0.214s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_navigation/share/marvin_navigation/maps/marvin_world.data
+[0.215s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_navigation/share/marvin_navigation/maps/marvin_world.pgm
+[0.215s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_navigation/share/marvin_navigation/maps/marvin_world.posegraph
+[0.215s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_navigation/share/marvin_navigation/maps/marvin_world.yaml
+[0.215s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_navigation/share/ament_index/resource_index/package_run_dependencies/marvin_navigation
+[0.222s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_navigation/share/ament_index/resource_index/parent_prefix_path/marvin_navigation
+[0.222s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_navigation/share/marvin_navigation/environment/ament_prefix_path.sh
+[0.222s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_navigation/share/marvin_navigation/environment/ament_prefix_path.dsv
+[0.222s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_navigation/share/marvin_navigation/environment/path.sh
+[0.222s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_navigation/share/marvin_navigation/environment/path.dsv
+[0.223s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_navigation/share/marvin_navigation/local_setup.bash
+[0.223s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_navigation/share/marvin_navigation/local_setup.sh
+[0.224s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_navigation/share/marvin_navigation/local_setup.zsh
+[0.224s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_navigation/share/marvin_navigation/local_setup.dsv
+[0.224s] -- Symlinking: /home/marvin/marvin/marvin_sim_ws/install/marvin_navigation/share/marvin_navigation/package.dsv
+[0.228s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_navigation/share/ament_index/resource_index/packages/marvin_navigation
+[0.229s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_navigation/share/marvin_navigation/cmake/marvin_navigationConfig.cmake
+[0.229s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_navigation/share/marvin_navigation/cmake/marvin_navigationConfig-version.cmake
+[0.229s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_navigation/share/marvin_navigation/package.xml
+[0.280s] Invoked command in '/home/marvin/marvin/marvin_sim_ws/build/marvin_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/marvin/marvin/marvin_ws/install/marvincar_nav:/home/marvin/marvin/marvin_ws/install/marvincar_laser:/home/marvin/marvin/marvin_ws/install/marvincar_description:/home/marvin/marvin/marvin_ws/install/marvincar_ctrl:/home/marvin/marvin/marvin_ws/install/marvincar_bringup:/opt/ros/foxy /usr/bin/cmake --install /home/marvin/marvin/marvin_sim_ws/build/marvin_navigation

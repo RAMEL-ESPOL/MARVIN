@@ -1,0 +1,21 @@
+[0.068s] Invoking command in '/home/marvin/marvin/marvin_sim_ws/build/marvin': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/marvin/marvin/marvin_ws/install/marvincar_nav:/home/marvin/marvin/marvin_ws/install/marvincar_laser:/home/marvin/marvin/marvin_ws/install/marvincar_description:/home/marvin/marvin/marvin_ws/install/marvincar_ctrl:/home/marvin/marvin/marvin_ws/install/marvincar_bringup:/opt/ros/foxy /usr/bin/cmake --build /home/marvin/marvin/marvin_sim_ws/build/marvin -- -j6 -l6
+[0.141s] Invoked command in '/home/marvin/marvin/marvin_sim_ws/build/marvin' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/marvin/marvin/marvin_ws/install/marvincar_nav:/home/marvin/marvin/marvin_ws/install/marvincar_laser:/home/marvin/marvin/marvin_ws/install/marvincar_description:/home/marvin/marvin/marvin_ws/install/marvincar_ctrl:/home/marvin/marvin/marvin_ws/install/marvincar_bringup:/opt/ros/foxy /usr/bin/cmake --build /home/marvin/marvin/marvin_sim_ws/build/marvin -- -j6 -l6
+[0.191s] Invoking command in '/home/marvin/marvin/marvin_sim_ws/build/marvin': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/marvin/marvin/marvin_ws/install/marvincar_nav:/home/marvin/marvin/marvin_ws/install/marvincar_laser:/home/marvin/marvin/marvin_ws/install/marvincar_description:/home/marvin/marvin/marvin_ws/install/marvincar_ctrl:/home/marvin/marvin/marvin_ws/install/marvincar_bringup:/opt/ros/foxy /usr/bin/cmake --install /home/marvin/marvin/marvin_sim_ws/build/marvin
+[0.207s] -- Install configuration: ""
+[0.211s] -- Execute custom install script
+[0.214s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin/share/ament_index/resource_index/package_run_dependencies/marvin
+[0.214s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin/share/ament_index/resource_index/parent_prefix_path/marvin
+[0.214s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin/share/marvin/environment/ament_prefix_path.sh
+[0.214s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin/share/marvin/environment/ament_prefix_path.dsv
+[0.214s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin/share/marvin/environment/path.sh
+[0.214s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin/share/marvin/environment/path.dsv
+[0.214s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin/share/marvin/local_setup.bash
+[0.214s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin/share/marvin/local_setup.sh
+[0.214s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin/share/marvin/local_setup.zsh
+[0.215s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin/share/marvin/local_setup.dsv
+[0.215s] -- Symlinking: /home/marvin/marvin/marvin_sim_ws/install/marvin/share/marvin/package.dsv
+[0.246s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin/share/ament_index/resource_index/packages/marvin
+[0.246s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin/share/marvin/cmake/marvinConfig.cmake
+[0.246s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin/share/marvin/cmake/marvinConfig-version.cmake
+[0.247s] -- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin/share/marvin/package.xml
+[0.247s] Invoked command in '/home/marvin/marvin/marvin_sim_ws/build/marvin' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/marvin/marvin/marvin_ws/install/marvincar_nav:/home/marvin/marvin/marvin_ws/install/marvincar_laser:/home/marvin/marvin/marvin_ws/install/marvincar_description:/home/marvin/marvin/marvin_ws/install/marvincar_ctrl:/home/marvin/marvin/marvin_ws/install/marvincar_bringup:/opt/ros/foxy /usr/bin/cmake --install /home/marvin/marvin/marvin_sim_ws/build/marvin

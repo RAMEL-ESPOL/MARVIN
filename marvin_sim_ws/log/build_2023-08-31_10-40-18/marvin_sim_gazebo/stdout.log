@@ -1,0 +1,31 @@
+-- Install configuration: ""
+-- Up-to-date: /home/marvin/marvin/marvin_sim_ws/install/marvin_sim_gazebo/share/marvin_sim_gazebo/launch
+-- Up-to-date: /home/marvin/marvin/marvin_sim_ws/install/marvin_sim_gazebo/share/marvin_sim_gazebo/launch/gazebo_spawn.launch.py
+-- Up-to-date: /home/marvin/marvin/marvin_sim_ws/install/marvin_sim_gazebo/share/marvin_sim_gazebo/worlds
+-- Up-to-date: /home/marvin/marvin/marvin_sim_ws/install/marvin_sim_gazebo/share/marvin_sim_gazebo/worlds/small_city.world
+-- Up-to-date: /home/marvin/marvin/marvin_sim_ws/install/marvin_sim_gazebo/share/marvin_sim_gazebo/worlds/test_city.world
+-- Up-to-date: /home/marvin/marvin/marvin_sim_ws/install/marvin_sim_gazebo/share/marvin_sim_gazebo/worlds/obstacles.world
+-- Up-to-date: /home/marvin/marvin/marvin_sim_ws/install/marvin_sim_gazebo/share/marvin_sim_gazebo/config
+-- Up-to-date: /home/marvin/marvin/marvin_sim_ws/install/marvin_sim_gazebo/share/marvin_sim_gazebo/config/gazebo_params.yaml
+-- Up-to-date: /home/marvin/marvin/marvin_sim_ws/install/marvin_sim_gazebo/share/marvin_sim_gazebo/rviz
+-- Up-to-date: /home/marvin/marvin/marvin_sim_ws/install/marvin_sim_gazebo/share/marvin_sim_gazebo/rviz/description.rviz
+-- Up-to-date: /home/marvin/marvin/marvin_sim_ws/install/marvin_sim_gazebo/share/marvin_sim_gazebo/environment/pythonpath.sh
+-- Up-to-date: /home/marvin/marvin/marvin_sim_ws/install/marvin_sim_gazebo/share/marvin_sim_gazebo/environment/pythonpath.dsv
+-- Up-to-date: /home/marvin/marvin/marvin_sim_ws/install/marvin_sim_gazebo/lib/python3.8/site-packages/marvin_sim_gazebo
+-- Up-to-date: /home/marvin/marvin/marvin_sim_ws/install/marvin_sim_gazebo/lib/python3.8/site-packages/marvin_sim_gazebo/__init__.py
+Listing '/home/marvin/marvin/marvin_sim_ws/install/marvin_sim_gazebo/lib/python3.8/site-packages/marvin_sim_gazebo'...
+-- Up-to-date: /home/marvin/marvin/marvin_sim_ws/install/marvin_sim_gazebo/share/ament_index/resource_index/package_run_dependencies/marvin_sim_gazebo
+-- Up-to-date: /home/marvin/marvin/marvin_sim_ws/install/marvin_sim_gazebo/share/ament_index/resource_index/parent_prefix_path/marvin_sim_gazebo
+-- Up-to-date: /home/marvin/marvin/marvin_sim_ws/install/marvin_sim_gazebo/share/marvin_sim_gazebo/environment/ament_prefix_path.sh
+-- Up-to-date: /home/marvin/marvin/marvin_sim_ws/install/marvin_sim_gazebo/share/marvin_sim_gazebo/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/marvin/marvin/marvin_sim_ws/install/marvin_sim_gazebo/share/marvin_sim_gazebo/environment/path.sh
+-- Up-to-date: /home/marvin/marvin/marvin_sim_ws/install/marvin_sim_gazebo/share/marvin_sim_gazebo/environment/path.dsv
+-- Up-to-date: /home/marvin/marvin/marvin_sim_ws/install/marvin_sim_gazebo/share/marvin_sim_gazebo/local_setup.bash
+-- Up-to-date: /home/marvin/marvin/marvin_sim_ws/install/marvin_sim_gazebo/share/marvin_sim_gazebo/local_setup.sh
+-- Up-to-date: /home/marvin/marvin/marvin_sim_ws/install/marvin_sim_gazebo/share/marvin_sim_gazebo/local_setup.zsh
+-- Up-to-date: /home/marvin/marvin/marvin_sim_ws/install/marvin_sim_gazebo/share/marvin_sim_gazebo/local_setup.dsv
+-- Installing: /home/marvin/marvin/marvin_sim_ws/install/marvin_sim_gazebo/share/marvin_sim_gazebo/package.dsv
+-- Up-to-date: /home/marvin/marvin/marvin_sim_ws/install/marvin_sim_gazebo/share/ament_index/resource_index/packages/marvin_sim_gazebo
+-- Up-to-date: /home/marvin/marvin/marvin_sim_ws/install/marvin_sim_gazebo/share/marvin_sim_gazebo/cmake/marvin_sim_gazeboConfig.cmake
+-- Up-to-date: /home/marvin/marvin/marvin_sim_ws/install/marvin_sim_gazebo/share/marvin_sim_gazebo/cmake/marvin_sim_gazeboConfig-version.cmake
+-- Up-to-date: /home/marvin/marvin/marvin_sim_ws/install/marvin_sim_gazebo/share/marvin_sim_gazebo/package.xml

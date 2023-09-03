@@ -1,0 +1,39 @@
+-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclpy: 1.0.13 (/opt/ros/foxy/share/rclpy/cmake)
+-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/marvin/marvin/marvin_sim_ws/build/marvin_sim_gazebo
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_sim_gazebo/share/marvin_sim_gazebo/launch/gazebo_spawn.launch.py
+-- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_sim_gazebo/share/marvin_sim_gazebo/worlds/obstacles.world
+-- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_sim_gazebo/share/marvin_sim_gazebo/worlds/small_city.world
+-- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_sim_gazebo/share/marvin_sim_gazebo/worlds/test_city.world
+-- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_sim_gazebo/share/marvin_sim_gazebo/config/gazebo_params.yaml
+-- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_sim_gazebo/share/marvin_sim_gazebo/rviz/description.rviz
+-- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_sim_gazebo/share/marvin_sim_gazebo/environment/pythonpath.sh
+-- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_sim_gazebo/share/marvin_sim_gazebo/environment/pythonpath.dsv
+-- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_sim_gazebo/lib/python3.8/site-packages/marvin_sim_gazebo/__init__.py
+-- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_sim_gazebo/share/ament_index/resource_index/package_run_dependencies/marvin_sim_gazebo
+-- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_sim_gazebo/share/ament_index/resource_index/parent_prefix_path/marvin_sim_gazebo
+-- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_sim_gazebo/share/marvin_sim_gazebo/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_sim_gazebo/share/marvin_sim_gazebo/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_sim_gazebo/share/marvin_sim_gazebo/environment/path.sh
+-- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_sim_gazebo/share/marvin_sim_gazebo/environment/path.dsv
+-- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_sim_gazebo/share/marvin_sim_gazebo/local_setup.bash
+-- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_sim_gazebo/share/marvin_sim_gazebo/local_setup.sh
+-- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_sim_gazebo/share/marvin_sim_gazebo/local_setup.zsh
+-- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_sim_gazebo/share/marvin_sim_gazebo/local_setup.dsv
+-- Symlinking: /home/marvin/marvin/marvin_sim_ws/install/marvin_sim_gazebo/share/marvin_sim_gazebo/package.dsv
+-- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_sim_gazebo/share/ament_index/resource_index/packages/marvin_sim_gazebo
+-- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_sim_gazebo/share/marvin_sim_gazebo/cmake/marvin_sim_gazeboConfig.cmake
+-- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_sim_gazebo/share/marvin_sim_gazebo/cmake/marvin_sim_gazeboConfig-version.cmake
+-- Up-to-date symlink: /home/marvin/marvin/marvin_sim_ws/install/marvin_sim_gazebo/share/marvin_sim_gazebo/package.xml
+Listing '/home/marvin/marvin/marvin_sim_ws/install/marvin_sim_gazebo/lib/python3.8/site-packages/marvin_sim_gazebo'...
