@@ -161,7 +161,6 @@ You can now move the robot freely through the map.
 =======
 
 ## Requirements:
->>>>>>> 47299e2f3b80f1d6a6e577e13da44614a247b2d4
 
 - Operating System: Ubuntu Linux Jammy Jellyfish (22.04)
 - Jetson Nano Developer Kit, Jetson Nano 4Gb
