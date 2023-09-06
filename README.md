@@ -11,7 +11,7 @@ MARVIN is a comprehensive platform (built by Luis Andrade Proaño) designed to f
 - Code developed for ROS2 foxy
 
 MARVIN is designed to be versatile, enabling researchers and developers to experiment with different robot types with the same steering system, test various algorithms, and to navigate complex enviroments  in real-world scenarios. By providing these core modules and simulation environments, MARVIN is another tool for investigation in the field of robotics.
-<<<<<<< HEAD
+
 
 ## Requirements:
 
