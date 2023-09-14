@@ -12,6 +12,9 @@ MARVIN is a comprehensive platform (built by Luis Andrade Proaño) designed to f
 
 MARVIN is designed to be versatile, enabling researchers and developers to experiment with different robot types with the same steering system, test various algorithms, and to navigate complex enviroments  in real-world scenarios. By providing these core modules and simulation environments, MARVIN is another tool for investigation in the field of robotics.
 
+## Framework Overview
+An overview of the framework modules and communications is presented below:
+![framework](marvin_images/framework.png)
 
 ## Requirements:
 
@@ -32,7 +35,7 @@ sudo apt-get install ros-foxy-gazebo-ros2-control
 ## Installation for the simulation
 1.- Clone the github repository in a workspace source folder. (marvin_ws/src)
 ```sh
-git clone https://github.com/RAMEL-ESPOL/Chappy.git
+git clone https://github.com/RAMEL-ESPOL/MARVIN.git
 ```
 2.- Go to workspace directory and Install dependencies
 ```sh
