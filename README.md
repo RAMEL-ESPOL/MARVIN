@@ -175,4 +175,4 @@ The package structure is the following:
 - **configurations ->** contains the bash file that replaces the original created in the Docker container.
 - **Dockerfile ->** contains a list of instrucctions to build a container from a file. (Includes the main container image with ubuntu 20.04 and ROS2 foxy installed).
 
-![repository_structure](marvin_images/repository_structure.png)
+![repository_structure](marvin_images/repository_structure.PNG)
