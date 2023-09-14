@@ -1,9 +1,0 @@
-/home/marvin/marvin/marvin_sim_ws/build/marvin_sim_bringup/CMakeFiles/install/strip.dir
-/home/marvin/marvin/marvin_sim_ws/build/marvin_sim_bringup/CMakeFiles/install/local.dir
-/home/marvin/marvin/marvin_sim_ws/build/marvin_sim_bringup/CMakeFiles/install.dir
-/home/marvin/marvin/marvin_sim_ws/build/marvin_sim_bringup/CMakeFiles/list_install_components.dir
-/home/marvin/marvin/marvin_sim_ws/build/marvin_sim_bringup/CMakeFiles/rebuild_cache.dir
-/home/marvin/marvin/marvin_sim_ws/build/marvin_sim_bringup/CMakeFiles/edit_cache.dir
-/home/marvin/marvin/marvin_sim_ws/build/marvin_sim_bringup/CMakeFiles/test.dir
-/home/marvin/marvin/marvin_sim_ws/build/marvin_sim_bringup/CMakeFiles/marvin_sim_bringup_uninstall.dir
-/home/marvin/marvin/marvin_sim_ws/build/marvin_sim_bringup/CMakeFiles/uninstall.dir
