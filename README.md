@@ -90,7 +90,7 @@ docker build . -t marvin:latest
 After the docker has been built, you have to run it with the following conditions
 3.- Build the pacakge.
 ```sh
-docker run -it net=host --device=/dev/input/event3 --device=/dev/input/js0 --device=/dev/myserial --device=/dev/rplidar --env="DISPLAY" --env="QT_X11_NO_MITSHM=1" -v /tmp/.X11-unix:/tmp/.X11-unix marvin:latest /bin/bash
+docker run -it --net=host --device=/dev/input/event3 --device=/dev/input/js0 --device=/dev/myserial --device=/dev/rplidar --env="DISPLAY" --env="QT_X11_NO_MITSHM=1" -v /tmp/.X11-unix:/tmp/.X11-unix marvin:latest /bin/bash
 ```
 This will let you run the Docker and create a container to work in. 
 
@@ -108,7 +108,7 @@ docker start <container name>
 ```
 5.- Run the container
 ```sh
-docker run exec -it <container name> /bin/bash
+docker exec -it <container name> /bin/bash
 ```
 
 ##Quality of life improvements 
@@ -121,7 +121,7 @@ After enabling the Jetson Nano for remote control, download from the main page "
 
 Everytime you open a new cmd window, you must execute the running container to acces it
 ```sh
-docker run exec -it <container name> /bin/bash
+docker exec -it <container name> /bin/bash
 ```
 
 ## Process
@@ -151,6 +151,7 @@ ros2 launch marvincar_nav mapping_launch.py
 Move the vehicle so that SLAM Toolbox maps the area in real time. 
 
 After you've mapped the area. 
+
 5. After you've mapped the area, go in Rviz to Panels -> add new Panel and click on SlamToolboxPlugin Make sure that you save the map with the name "marvincar"
 
 6. Close the Map Plugin and the cmd Windows that's running the mapping 
