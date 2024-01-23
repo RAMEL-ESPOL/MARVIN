@@ -16,14 +16,62 @@ MARVIN is designed to be versatile, enabling researchers and developers to exper
 An overview of the framework modules and communications is presented below:
 ![framework](marvin_images/framework.png)
 
-## Requirements:
+# Software Requirements 
+For the simulation :
+- Operating System: Ubuntu Linux Focal Fossa LTS (20.04.6) - https://releases.ubuntu.com/focal/
 
-- Operating System: Ubuntu Linux Jammy Jellyfish (22.04)
-- Jetson Nano Developer Kit, Jetson Nano 4Gb
-- Operating System: Ubuntu Linux Bionic Beaver 18.04
+For MARVIN :
+- Operating System: Jetson Nano Developer Kit SD Card Image (Ubuntu Linux Bionic Beaver 18.04 ) - https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#write
 - For the simulation consider according the computational requirements .
 
-## Dependencies:
+
+<details open>
+  <summary> <b> Prerequisites <b></summary>
+  0.1.- Update your apt repository
+    
+  ```sh
+  sudo apt update
+  ```
+  0.2.- Download and install git 
+  ```sh
+  sudo apt install git
+  ```
+  * To confirm that it's properly installed, run the following command 
+    ```sh
+    git --version
+    ```
+  0.3.- Download and install ROS2 foxy 
+  
+  All instructions are found in the following link: https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html 
+  
+  * Finally add sourcing to your shell startup script
+    ```sh
+    echo "source /opt/ros/foxy/setup.bash" >> ~/.bashrc
+    ```
+  0.4.- Install Gazebo for simulation with physics
+  ```sh
+  sudo apt install ros-foxy-gazebo-ros-pkgs
+  ```
+  0.5 Install the following dependencies
+  * Xacro library
+    ```sh
+    sudo apt install ros-foxy-xacro
+    ```
+  * Joint-state-publisher package
+    ```sh
+    sudo apt install ros-foxy-joint-state-publisher
+    ```
+   * Joint-state-publisher package
+     ```sh
+     sudo apt install ros-foxy-joint-state-publisher
+     ```
+   * Ros2 control package
+     ```sh
+     sudo apt install ros-foxy-ros2-control
+     ```
+</details>
+
+<!---## Dependencies:
 For the simulation:
 - ROS2 Foxy. Installation: https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html 
 - Verify gazebo installation. 
@@ -31,18 +79,26 @@ For the simulation:
 ```sh
 sudo apt-get install ros-foxy-gazebo-ros2-control
 ```
+-->
 
-## Installation for the simulated vehicle
+# Installation steps for the simulation
+
 1.- Clone the github repository in a workspace source folder. (marvin_sim_ws/src)
 ```sh
 git clone https://github.com/RAMEL-ESPOL/MARVIN.git
 ```
-2.- Go to workspace directory and Install dependencies
+2.- Go to workspace directory and copy the "meshes" folder
 ```sh
-cd ..
-rosdep install -y --from-paths src --ignore-src
+cd MARVIN/marvin_sim_ws/src/marvin_description
 ```
-3.- Build the pacakge.
+* Paste the "meshes" folder into the following folder. (This will allow you to visualize the MARVIN model in the Gazebo environment)
+  ```sh
+  cd .gazebo
+  mkdir models
+  cd models
+  mkdir marvin_model
+  ```
+3.- Build the package in marvin_sim_ws workspace.
 ```sh
 colcon build
 ```
