@@ -61,9 +61,13 @@ For MARVIN :
     ```sh
     sudo apt install ros-humble-joint-state-publisher
     ```
-   * Joint-state-publisher package
+  * Joint-state-publisher-gui package
+    ```sh
+    sudo apt install ros-humble-joint-state-publisher-gui
+    ```
+   * Install colcon 
      ```sh
-     sudo apt install ros-humble-joint-state-publisher
+     sudo apt install python3-colcon-common-extensions
      ```
    * Ros2 control package
      ```sh
