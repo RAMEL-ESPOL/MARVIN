@@ -18,7 +18,7 @@ An overview of the framework modules and communications is presented below:
 
 # Software Requirements 
 For the simulation :
-- Operating System: Ubuntu Linux Focal Fossa LTS (20.04.6) - https://releases.ubuntu.com/focal/
+- Operating System: Ubuntu Linux Jammy Jellyfish LTS (22.04.3) - https://releases.ubuntu.com/jammy/
 
 For MARVIN :
 - Operating System: Jetson Nano Developer Kit SD Card Image (Ubuntu Linux Bionic Beaver 18.04 ) - https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#write
@@ -40,34 +40,34 @@ For MARVIN :
     ```sh
     git --version
     ```
-  0.3.- Download and install ROS2 foxy 
+  0.3.- Download and install ROS2 humble 
   
-  All instructions are found in the following link: https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html 
+  All instructions are found in the following link: https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html 
   
   * Finally add sourcing to your shell startup script
     ```sh
-    echo "source /opt/ros/foxy/setup.bash" >> ~/.bashrc
+    echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
     ```
   0.4.- Install Gazebo for simulation with physics
   ```sh
-  sudo apt install ros-foxy-gazebo-ros-pkgs
+  sudo apt install ros-humble-gazebo-ros-pkgs
   ```
   0.5 Install the following dependencies
   * Xacro library
     ```sh
-    sudo apt install ros-foxy-xacro
+    sudo apt install ros-humble-xacro
     ```
   * Joint-state-publisher package
     ```sh
-    sudo apt install ros-foxy-joint-state-publisher
+    sudo apt install ros-humble-joint-state-publisher
     ```
    * Joint-state-publisher package
      ```sh
-     sudo apt install ros-foxy-joint-state-publisher
+     sudo apt install ros-humble-joint-state-publisher
      ```
    * Ros2 control package
      ```sh
-     sudo apt install ros-foxy-ros2-control
+     sudo apt install ros-humble-ros2-control
      ```
 </details>
 
