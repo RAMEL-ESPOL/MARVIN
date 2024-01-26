@@ -73,6 +73,14 @@ For MARVIN :
      ```sh
      sudo apt install ros-humble-ros2-control
      ```
+   * Nav2 package
+     ```sh
+     sudo apt install ros-humble-navigation2 ros-humble-nav2-bringup
+     ```
+   * Ros2 control package
+     ```sh
+     sudo apt install ros-humble-twist-mux
+     ```
 </details>
 
 <!---## Dependencies:
