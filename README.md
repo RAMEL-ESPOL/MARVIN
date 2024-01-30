@@ -146,14 +146,14 @@ You can now move the robot freely through the map. You can also (during the path
 
 
 ## Installation for the Jetson Nano
-1.- Clone the github repository in a workspace source folder. (marvin_ws/src)
+1.- Clone the github repository in the HOME enviroment.
 ```sh
 git clone https://github.com/RAMEL-ESPOL/MARVIN.git
 ```
-2.- Go to workspace directory /src and initialize the DockerFile (dont worry, the factory image of the Jetson Nano comes with Docker pre-installed).
+2.- Go to recently downloaded folder and initialize the DockerFile (dont worry, the factory image of the Jetson Nano comes with Docker pre-installed).
 ```sh
-cd ..
-docker build . -t marvin:latest
+cd /MARVIN
+sudo docker build . -t marvin:latest
 ```
 After the docker has been built, you have to run it with the following conditions
 3.- Build the pacakge.
