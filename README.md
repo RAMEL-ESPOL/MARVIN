@@ -53,7 +53,6 @@ For MARVIN :
   sudo apt install ros-humble-gazebo-ros-pkgs
   ```
   0.5 Install the following dependencies
-  * Xacro library
     ```sh
     sudo apt install ros-humble-xacro
     sudo apt install ros-humble-joint-state-publisher
@@ -63,30 +62,6 @@ For MARVIN :
     sudo apt install ros-humble-navigation2 ros-humble-nav2-bringup
     sudo apt install ros-humble-twist-mux
     ```
-  * Joint-state-publisher package
-    ```sh
-    sudo apt install ros-humble-joint-state-publisher
-    ```
-  * Joint-state-publisher-gui package
-    ```sh
-    sudo apt install ros-humble-joint-state-publisher-gui
-    ```
-   * Install colcon 
-     ```sh
-     sudo apt install python3-colcon-common-extensions
-     ```
-   * Ros2 control package
-     ```sh
-     sudo apt install ros-humble-ros2-control
-     ```
-   * Nav2 package
-     ```sh
-     sudo apt install ros-humble-navigation2 ros-humble-nav2-bringup
-     ```
-   * Ros2 control package
-     ```sh
-     sudo apt install ros-humble-twist-mux
-     ```
 </details>
 
 <!---## Dependencies:
