@@ -54,12 +54,19 @@ For MARVIN :
   ```
   0.5 Install the following dependencies
     ```sh
+    
     sudo apt install ros-humble-xacro
+    
     sudo apt install ros-humble-joint-state-publisher
+    
     sudo apt install ros-humble-joint-state-publisher-gui
+    
     sudo apt install python3-colcon-common-extensions
+    
     sudo apt install ros-humble-ros2-control
+    
     sudo apt install ros-humble-navigation2 ros-humble-nav2-bringup
+    
     sudo apt install ros-humble-twist-mux
     ```
 </details>
