@@ -22,6 +22,7 @@ For the simulation :
 
 For MARVIN :
 - Operating System: Jetson Nano Developer Kit SD Card Image (Ubuntu Linux Bionic Beaver 18.04 ) - https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#write
+- Operating System: Ubuntu Linux Focal Fossa LTS (20.04.6)  - https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#write
 - For the simulation consider according the computational requirements .
 
 
@@ -68,6 +69,7 @@ For MARVIN :
     sudo apt install ros-humble-navigation2 ros-humble-nav2-bringup
     
     sudo apt install ros-humble-twist-mux
+    
     ```
 </details>
 
@@ -134,51 +136,180 @@ You can now move the robot freely through the map. You can also (during the path
 
 
 ## Installation for the Jetson Nano
-1.- Clone the github repository in the HOME enviroment.
-```sh
-git clone https://github.com/RAMEL-ESPOL/MARVIN.git
-```
-2.- Go to recently downloaded folder and initialize the DockerFile (dont worry, the factory image of the Jetson Nano comes with Docker pre-installed).
-```sh
-cd /MARVIN
-sudo docker build . -t marvin:latest
-```
-After the docker has been built, you have to run it with the following conditions
-3.- Build the pacakge.
-```sh
-docker run -it --net=host --device=/dev/input/event3 --device=/dev/input/js0 --device=/dev/myserial --device=/dev/rplidar --env="DISPLAY" --env="QT_X11_NO_MITSHM=1" -v /tmp/.X11-unix:/tmp/.X11-unix marvin:latest /bin/bash
-```
-This will let you run the Docker and create a container to work in. 
 
-Exit the docker with the "exit" command. 
-Now that the container is created, all the files and changes that you've made, will remain there.
-To open the container you must first now its name. 
-Get it with: 
-```sh
-docker ps -a
-```
-The last name is the last container that was active. 
-4.- Start the container
-```sh
-docker start <container name> 
-```
-5.- Run the container
-```sh
-docker exec -it <container name> /bin/bash
-```
+<details open>
+  <summary> <b> Prerequisites for the computer you're going to use with MARVIN <b></summary>
+    
+  0.1.- Update your apt repository 
+  ```sh
+  sudo apt update
+  ```
+  0.2.- Download and install git 
+  ```sh
+  sudo apt install git
+  ```
+  * To confirm that it's properly installed, run the following command 
+  ```sh
+  git --version
+  ```
+  0.3.- Download and install ROS2 foxy 
+  
+  All instructions are found in the following link: https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html
+  
+  * Add sourcing to your shell startup script
+  ```sh
+  echo "source /opt/ros/foxy/setup.bash" >> ~/.bashrc
+  ```
+  0.4.- Finally set the ROS_DOMAIN_ID variable
+  ```sh
+  echo "export ROS_DOMAIN_ID=0" >> ~/.bashrc
 
-##Quality of life improvements 
-For an easier time running the Jetson nano, first enable remote control (the following video gives the proper instrucions): 
+  source ~/.bashrc
+  ```
+  0.5 Install the following dependencies
+  ```sh
+    
+  sudo apt install python3-colcon-common-extensions
+    
+  sudo apt install ros-foxy-navigation2 ros-foxy-nav2-bringup
+    
+  ```
+  0.6 Clone the github repository in the HOME enviroment.
+  ```sh
+     
+  git clone https://github.com/RAMEL-ESPOL/MARVIN.git
+      
+  ```
+  0.7 Build the ROS2 workspace
+  ```sh
+    
+  cd /HOME/MARVIN/marvin_ws
+    
+  colcon build
+    
+  ```
+  0.8 Source the environment
+  ```sh
+    
+  source install/setup.bash
+    
+  ```
+</details>
 
-```sh
-https://www.youtube.com/watch?v=Rgmw6kPmhXI
-```
-After enabling the Jetson Nano for remote control, download from the main page "RealVNC Viewer"
+<details open>
+  <summary> <b> Prerequisites for the Jetson Nano <b></summary>
+ 
+  0.1 Device bind ID
+  
+  0.2.- Connect the control via Bluetooth to the Jetson Nano
+  
+  0.3.- Check the IP address 
+  ```sh
+  hostname -I
+  ```
 
-Everytime you open a new cmd window, you must execute the running container to acces it
-```sh
-docker exec -it <container name> /bin/bash
-```
+  * Write the address down.
+
+  REMEMBER: Both the Jetson Nano and your computer must be connected to the same Wifi network.
+
+  1.- Connect your computer to the Jetson Nano. 
+  ```sh
+  ssh marvin@<the Jetsons IP address>
+  ```
+
+  *Always set the time and date everytime you turn on the Jetson Nano 
+  
+  Date
+  ```sh
+  date +%Y%m%d -s "20081128" 
+  ```
+  Time (use a 24h cycle)
+  ```sh
+  date +%T -s "10:13:13"
+  ```
+  2.- Clone the github repository in the HOME enviroment.
+  ```sh
+  git clone https://github.com/RAMEL-ESPOL/MARVIN.git
+  ```
+  3.- Go to recently downloaded folder and initialize the DockerFile (dont worry, the factory image of the Jetson Nano comes with Docker pre-installed).
+  ```sh
+  cd /MARVIN
+  sudo docker build . -t marvin:latest
+  ```
+  After the docker has been built, you have to run it with the following conditions
+
+  4.- Build the container environment.
+  ```sh
+  sudo docker run -it --net=host --device=/dev/input/event0 --device=/dev/input/event1 --device=/dev/input/event2 --device=/dev/input/js0 --device=/dev/myserial --device=/dev/rplidar --env="DISPLAY" --env="QT_X11_NO_MITSHM=1" -v /tmp/.X11-unix:/tmp/.X11-unix marvin:latest /bin/bash
+  ```
+
+  ##Inside the container
+
+  5.- Build the package.
+  ```sh
+  colcon build 
+  ```
+  6.- Source the environment
+  ```sh
+  source install/setup.bash
+  ```
+  7.- Finally set the ROS_DOMAIN_ID variable
+  ```sh
+  echo "export ROS_DOMAIN_ID=0" >> ~/.bashrc
+
+  source ~/.bashrc
+  ```
+
+  Exit the docker with the "exit" command. 
+
+  Now that the container is created, all the files and changes that you've made, will remain there.
+  
+  To open the container you must first now its name. 
+
+  To get the containers name: 
+  ```sh
+  docker ps -a
+  ```
+  The last name is the last container that was active. 
+
+  Start the container
+  ```sh
+  docker start <container name> 
+  ```
+
+  Run the container 
+  ```sh
+  docker exec -it <container name> /bin/bash
+  ```
+   
+</details>
+
+<details open>
+  <summary> <b> Recomendations <b></summary>
+  Everytime you open a new cmd window, you must connect via ssh to the Jetson nano and execute the running container to access it
+    
+  ```sh
+  docker exec -it <container name> /bin/bash
+  ```
+  To get the containers name: 
+  ```sh
+  docker ps -a
+  ```
+  Exit the docker container with the "exit" command. 
+
+  Turn off the container if it's still active 
+  
+  ```sh
+  sudo docker stop <container name>
+  ```
+
+  Turn off the Jetson Nano  remotely
+  
+  ```sh
+  sudo shutdown -h now
+  ```
+</details>
+
 
 ## Process
 0. Inside the container you'll be in the MARVIN workspace already built. (Important step to perform in all new cmd windows opened)
@@ -196,7 +327,7 @@ ros2 launch marvin_lidar ld19.launch.py
 ```
 In Rviz activate the map node and spec
 
-3. Open a new cmd window, source in the ws and launch Rviz
+3. In your computer run the following launcher to display the map being made in real time.
 ```sh
 ros2 launch marvincar_nav view_map_launch.py 
 ```
