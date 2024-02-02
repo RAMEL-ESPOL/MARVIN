@@ -111,7 +111,7 @@ source install/setup.bash
 ```
 1.- Launch the simulation.
 ```sh
-ros2 launch marvin_sim_gazebo gazebo_spawn.launch.py world:=./src/marvin_sim_gazebo/worlds/obstacles.world use_sim_time:=true
+ros2 launch marvin_sim_gazebo gazebo_spawn.launch.py world:=./src/marvin_sim_gazebo/worlds/lab_track.world use_sim_time:=true
 ```
 2.- Open a new cmd window, source in the ws and launch SLAM.
 ```sh
