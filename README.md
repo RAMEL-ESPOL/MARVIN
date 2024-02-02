@@ -318,7 +318,7 @@ source install/setup.bash
 ```
 1. Launch the control and LiDAR of the robot
 ```sh
-ros2 launch marvincar_bringup marvincar_bringup.launch.py
+ros2 launch marvincar_bringup marvincar_bringup_launch.py
 ```
 
 2. Open a new cmd window, source in the ws and launch the LiDAR.
