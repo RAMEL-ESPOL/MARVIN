@@ -68,6 +68,13 @@ def generate_launch_description():
         executable='imu_filter_madgwick_node',
         parameters=[imu_filter_config]
     )
+    rviz_node = Node(
+        package='rviz2',
+        executable='rviz2',
+        name='rviz2',
+        output='screen',
+        arguments=['-d', LaunchConfiguration('rvizconfig')],
+    )
 
     ekf_node = IncludeLaunchDescription(
         PythonLaunchDescriptionSource([os.path.join(
@@ -93,10 +100,11 @@ def generate_launch_description():
         joint_state_publisher_node,
         joint_state_publisher_gui_node,
         robot_state_publisher_node,
+        #rviz_node,
         driver_node,
         base_node,
         imu_filter_node,
         ekf_node,
+        joy_node,
         marvin_joy_node,
-        joy_node
     ])

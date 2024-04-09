@@ -27,10 +27,10 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-        'Ackman_driver	= marvincar_bringup.Ackman_driver:main',
-        'calibrate_linear = marvincar_bringup.calibrate_linear:main',
-        'calibrate_angular = marvincar_bringup.calibrate_angular:main',
-        'patrol = marvincar_bringup.patrol:main',   
+            'Ackman_driver	= marvincar_bringup.Ackman_driver:main',
+            'calibrate_linear = marvincar_bringup.calibrate_linear:main',
+            'calibrate_angular = marvincar_bringup.calibrate_angular:main',
+            'patrol = marvincar_bringup.patrol:main',   
         ],
     },
 )
