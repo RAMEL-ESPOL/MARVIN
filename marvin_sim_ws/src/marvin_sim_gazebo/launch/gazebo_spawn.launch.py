@@ -78,9 +78,9 @@ def generate_launch_description():
         rviz_arg,
         gazebo,
         marvin_model,
-        #spawn_entity,
+        spawn_entity,
         rviz_node,
         joystick,
         twist_mux,
-        spawn_entity,
+        #spawn_entity,
     ])
