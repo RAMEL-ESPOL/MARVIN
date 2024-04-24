@@ -44,7 +44,7 @@ Stephen Brawner (brawner@gmail.com)
         </visual>
         <collision>
             <origin
-                xyz="0 0 0"
+                xyz="0 0 0.02"
                 rpy="0 0 0" />
             <geometry>
                 <mesh

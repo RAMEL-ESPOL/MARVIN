@@ -40,7 +40,7 @@
         <collision>
             <origin
                 xyz="0 0 0"
-                rpy="0 0 0" />
+                rpy="0 0 ${pi/2}" />
             <geometry>
                 <mesh
                     filename="package://marvin_description/meshes/camera_right.STL" />
