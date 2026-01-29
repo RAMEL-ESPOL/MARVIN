@@ -5,6 +5,16 @@ Stephen Brawner (brawner@gmail.com)
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
 <robot name="vehicle_model" xmlns:xacro="http://ros.org/wiki/xacro">
 
+    <!-- 
+    IMPORTANTE: Si tienes problemas visualizando el modelo en Gazebo, verifica las rutas de las mallas (meshes).
+    Busca todas las etiquetas <mesh filename="..."> y asegúrate de que apunten a la ubicación correcta.
+    Por ejemplo, cambia:
+    filename="package://marvin_description/meshes/archivo.STL"
+    a la ruta absoluta si es necesario para tu entorno de simulación, o asegúrate de que Gazebo pueda resolver el package://
+    o usa la ruta de instalacion de gazebo models:
+    filename="file://$(find marvin_description)/meshes/archivo.STL"
+    -->
+
     <xacro:include filename="$(find marvin_description)/urdf/controller/ackermann_drive.xacro" />
     <xacro:include filename="$(find marvin_description)/urdf/sensors/imu.xacro" />
     <xacro:include filename="$(find marvin_description)/urdf/sensors/lidar.xacro" />

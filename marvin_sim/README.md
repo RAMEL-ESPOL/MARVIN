@@ -54,7 +54,10 @@ This guide covers the setup and execution steps for the MARVIN simulation using 
     cp -r meshes/* ~/.gazebo/models/marvin_model/
     ```
 
-3.  **Build the Workspace:**
+3.  **Update URDF Mesh Paths:**
+    Before building, verify the mesh paths in the URDF file. Open `src/marvin_description/urdf/marvin.urdf.xacro` and check the comments at the beginning of the file. You may need to adjust the `<mesh filename="...">` paths so Gazebo can correctly find the STL files (e.g., using absolute paths or ensuring `package://` is resolved correctly).
+
+4.  **Build the Workspace:**
     Go to `marvin_sim` folder:
     ```sh
     cd ../.. # Back to marvin_sim
