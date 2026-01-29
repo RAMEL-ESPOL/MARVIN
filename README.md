@@ -85,13 +85,13 @@ sudo apt-get install ros-foxy-gazebo-ros2-control
 
 # Installation steps for the simulation
 
-1.- Clone the github repository in a workspace source folder. (marvin_sim_ws/src)
+1.- Clone the github repository in a workspace source folder. (marvin_sim/src)
 ```sh
 git clone https://github.com/RAMEL-ESPOL/MARVIN.git
 ```
 2.- Go to workspace directory and copy the "meshes" folder
 ```sh
-cd MARVIN/marvin_sim_ws/src/marvin_description
+cd MARVIN/marvin_sim/src/marvin_description
 ```
 * Paste the "meshes" folder into the following folder. (This will allow you to visualize the MARVIN model in the Gazebo environment)
   ```sh
@@ -100,7 +100,7 @@ cd MARVIN/marvin_sim_ws/src/marvin_description
   cd models
   mkdir marvin_model
   ```
-3.- Build the package in marvin_sim_ws workspace.
+3.- Build the package in marvin_sim workspace.
 ```sh
 colcon build
 ```
@@ -183,7 +183,7 @@ You can now move the robot freely through the map. You can also (during the path
   0.7 Build the ROS2 workspace
   ```sh
     
-  cd /HOME/MARVIN/marvin_ws
+  cd /HOME/MARVIN/marvin_real
     
   colcon build
     
@@ -358,8 +358,8 @@ You can now move the robot freely through the map.
 ## Package Structure
 The package structure is the following:
 - **marvin_images ->** includes images of the project.
-- **marvin_ws ->** includes the robots' packages (In this repo are all the packages that control the vehicule including the LiDAR LD19 sensor).
-- **marvin_sim_ws ->** includes the robots' simulation packages (In this repo are all the packages that control the vehicule including the different Gazebo enviroments ready for usage).
+- **marvin_real ->** includes the robots' packages (In this repo are all the packages that control the vehicule including the LiDAR LD19 sensor).
+- **marvin_sim ->** includes the robots' simulation packages (In this repo are all the packages that control the vehicule including the different Gazebo enviroments ready for usage).
 - **configurations ->** contains the bash file that replaces the original created in the Docker container.
 - **Dockerfile ->** contains a list of instrucctions to build a container from a file. (Includes the main container image with ubuntu 20.04 and ROS2 foxy installed).
 
