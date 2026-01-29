@@ -6,13 +6,11 @@ Stephen Brawner (brawner@gmail.com)
 <robot name="vehicle_model" xmlns:xacro="http://ros.org/wiki/xacro">
 
     <!-- 
-    IMPORTANTE: Si tienes problemas visualizando el modelo en Gazebo, verifica las rutas de las mallas (meshes).
-    Busca todas las etiquetas <mesh filename="..."> y asegúrate de que apunten a la ubicación correcta.
-    Por ejemplo, cambia:
-    filename="package://marvin_description/meshes/archivo.STL"
-    a la ruta absoluta si es necesario para tu entorno de simulación, o asegúrate de que Gazebo pueda resolver el package://
-    o usa la ruta de instalacion de gazebo models:
-    filename="file://$(find marvin_description)/meshes/archivo.STL"
+    IMPORTANT: If you have problems visualizing the model in Gazebo, verify the mesh paths.
+    Look for all <mesh filename="..."> tags and ensure they point to the correct location.
+    For example, change:
+    filename="package://marvin_description/meshes/file.STL"
+    to the absolute path if necessary for your simulation environment, or ensure Gazebo can resolve package:// 
     -->
 
     <xacro:include filename="$(find marvin_description)/urdf/controller/ackermann_drive.xacro" />
